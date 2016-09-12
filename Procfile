@@ -1,2 +1,1 @@
-heroku ps: scale web=1
-web: sh target/bin/webapp
+web: java $JAVA_OPTS -cp target/classes:target/dependency/* Ambienta
