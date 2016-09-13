@@ -39,7 +39,12 @@
     	<groupId>org.apache.taglibs</groupId>
     	<artifactId>taglibs-standard-impl</artifactId>
     	<version>1.2.5</version>
-    </dependency>
+    </dependency>    
+	<dependency>
+	    <groupId>org.drools</groupId>
+	    <artifactId>drools-clips</artifactId>
+	    <version>5.5.0.Final</version>
+	</dependency>
   </dependencies>
   <build>
     <finalName>ambientaapp</finalName>
