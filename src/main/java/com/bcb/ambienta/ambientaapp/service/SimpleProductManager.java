@@ -9,7 +9,7 @@ public class SimpleProductManager implements ProductManager{
 	private List<Product> products;
 
     public List<Product> getProducts() {
-    	return products;    
+    	return products; 
     }
 
     public void increasePrice(int percentage) {
@@ -19,10 +19,10 @@ public class SimpleProductManager implements ProductManager{
                                     (100 + percentage)/100;
                 product.setPrice(newPrice);
             }
-        }       
+        }     
 	}
 	
     public void setProducts(List<Product> products) {
-    	this.products = products;     
+    	this.products = products;      
     }
 }

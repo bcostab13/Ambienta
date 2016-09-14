@@ -7,6 +7,12 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>ambientaapp Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  
+  <properties>
+  	<org.springframework.version>4.2.5.RELEASE</org.springframework.version>  	
+  	<drools.version>5.0.1</drools.version>
+  </properties>
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -39,17 +45,28 @@
     	<groupId>org.apache.taglibs</groupId>
     	<artifactId>taglibs-standard-impl</artifactId>
     	<version>1.2.5</version>
-    </dependency>    
+    </dependency>  
+    <dependency>
+	    <groupId>org.kie</groupId>
+	    <artifactId>kie-api</artifactId>
+	    <version>6.4.0.Final</version>
+	</dependency>
+
+    <dependency>
+	    <groupId>org.drools</groupId>
+	    <artifactId>drools-compiler</artifactId>
+	    <version>6.4.0.Final</version>
+	    <scope>runtime</scope>
+	</dependency>	
+	
 	<dependency>
 	    <groupId>org.drools</groupId>
 	    <artifactId>drools-clips</artifactId>
-	    <version>5.5.0.Final</version>
+	    <version>5.6.0.Final</version>
 	</dependency>
   </dependencies>
   <build>
     <finalName>ambientaapp</finalName>
   </build>
-  <properties>
-  	<org.springframework.version>4.2.5.RELEASE</org.springframework.version>
-  </properties>
+  
 </project>

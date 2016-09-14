@@ -11,9 +11,9 @@ import org.junit.Test;
 import com.bcb.ambienta.ambientaapp.dominio.Product;
 
 public class SimpleProductManagerTests {
-
-    private SimpleProductManager productManager;
-    private List<Product> products;
+	private SimpleProductManager productManager;
+	
+	private List<Product> products;
     
     private static int PRODUCT_COUNT = 2;
     
@@ -42,6 +42,7 @@ public class SimpleProductManagerTests {
         products.add(product);
         
         productManager.setProducts(products);
+
     }
 
     @Test
