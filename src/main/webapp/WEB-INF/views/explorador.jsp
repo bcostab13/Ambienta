@@ -1,4 +1,5 @@
 <%@ include file="/WEB-INF/views/include.jsp" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -64,8 +65,8 @@
 				        <a data-toggle="collapse" href="#collapse1">Ver Opiniones(2)</a>
 				      </h4>
 				    </div>
-				    <div id="collapse1" class="panel-collapse collapse">
-				      <div class="panel-body">Mi opinion importa</div>				      
+				    <div id="collapse1" class="panel-collapse collapse" style="padding: 5px">
+				      		      	        
 				    </div>
 				  </div>
 				</div>				
@@ -75,7 +76,7 @@
         <!-- /#sidebar-wrapper -->
 		
 		<!-- Mapa general -->
-		<div id="map">Hola</div>
+		<div id="map"></div>
 		<!-- /Mapa General -->
 		
 		<!-- Indicadores -->
@@ -85,7 +86,7 @@
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
-            	<h1>Simple Sidebar</h1>                
+            	<h1>Proyecto Minero</h1>                
                 <div id="rateYo"></div>               
                       
                 <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
