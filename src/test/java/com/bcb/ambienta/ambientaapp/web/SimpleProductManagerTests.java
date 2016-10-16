@@ -1,4 +1,4 @@
-package com.bcb.ambienta.ambientaapp.service;
+package com.bcb.ambienta.ambientaapp.web;
 
 import static org.junit.Assert.*;
 
@@ -9,6 +9,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import com.bcb.ambienta.ambientaapp.dominio.Product;
+import com.bcb.ambienta.ambientaapp.service.SimpleProductManager;
 
 public class SimpleProductManagerTests {
 	private SimpleProductManager productManager;
