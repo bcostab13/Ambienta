@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/10/2016 09:54:51 PM by Hibernate Tools 5.1.0.Beta1 -->
+<hibernate-mapping>
+    <class name="com.bcb.ambienta.ambientaapp.model.Responsable" table="responsable" catalog="ambienta" optimistic-lock="version">
+        <id name="idResponsable" type="int">
+            <column name="idResponsable" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="empresa" class="com.bcb.ambienta.ambientaapp.model.Empresa" fetch="select">
+            <column name="Empresa_idEmpresa" not-null="true" />
+        </many-to-one>
+        <property name="nombre" type="string">
+            <column name="nombre" length="45" />
+        </property>
+        <property name="dni" type="string">
+            <column name="dni" length="45" not-null="true" unique="true" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="45" />
+        </property>
+        <property name="telefono" type="string">
+            <column name="telefono" length="45" />
+        </property>
+        <property name="cargo" type="string">
+            <column name="cargo" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

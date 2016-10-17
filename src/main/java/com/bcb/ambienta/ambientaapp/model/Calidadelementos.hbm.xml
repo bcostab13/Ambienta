@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/10/2016 09:54:51 PM by Hibernate Tools 5.1.0.Beta1 -->
+<hibernate-mapping>
+    <class name="com.bcb.ambienta.ambientaapp.model.Calidadelementos" table="calidadelementos" catalog="ambienta" optimistic-lock="version">
+        <id name="idCalidadElementos" type="int">
+            <column name="idCalidadElementos" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="proyecto" class="com.bcb.ambienta.ambientaapp.model.Proyecto" fetch="select">
+            <column name="Proyecto_idProyecto" not-null="true" />
+        </many-to-one>
+        <property name="concentracionPm10" type="java.lang.Integer">
+            <column name="concentracion_PM10" />
+        </property>
+        <property name="superaNivelExtractivo" type="java.lang.Boolean">
+            <column name="supera_nivel_extractivo" />
+        </property>
+        <property name="ruidoNpseq" type="java.lang.Integer">
+            <column name="ruidoNPseq" />
+        </property>
+    </class>
+</hibernate-mapping>

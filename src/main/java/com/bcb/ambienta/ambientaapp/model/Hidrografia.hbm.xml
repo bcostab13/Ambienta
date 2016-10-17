@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/10/2016 09:54:51 PM by Hibernate Tools 5.1.0.Beta1 -->
+<hibernate-mapping>
+    <class name="com.bcb.ambienta.ambientaapp.model.Hidrografia" table="hidrografia" catalog="ambienta" optimistic-lock="version">
+        <id name="idHidrografia" type="int">
+            <column name="idHidrografia" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="proyecto" class="com.bcb.ambienta.ambientaapp.model.Proyecto" fetch="select">
+            <column name="Proyecto_idProyecto" not-null="true" />
+        </many-to-one>
+        <property name="caudalRioMasProx" type="java.lang.Double">
+            <column name="caudalRioMasProx" precision="22" scale="0" />
+        </property>
+        <property name="caudalCuencaInfl" type="java.lang.Double">
+            <column name="caudalCuencaInfl" precision="22" scale="0" />
+        </property>
+        <property name="rioPrincipal" type="string">
+            <column name="rio_principal" length="100" />
+        </property>
+    </class>
+</hibernate-mapping>

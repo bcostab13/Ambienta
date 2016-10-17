@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/10/2016 09:54:51 PM by Hibernate Tools 5.1.0.Beta1 -->
+<hibernate-mapping>
+    <class name="com.bcb.ambienta.ambientaapp.model.Biologia" table="biologia" catalog="ambienta" optimistic-lock="version">
+        <id name="idBiologia" type="int">
+            <column name="idBiologia" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="proyecto" class="com.bcb.ambienta.ambientaapp.model.Proyecto" fetch="select">
+            <column name="Proyecto_idProyecto" not-null="true" />
+        </many-to-one>
+        <property name="caudalEcologico" type="java.lang.Long">
+            <column name="caudal_ecologico" precision="10" scale="0" />
+        </property>
+        <property name="areasProtegidas" type="java.lang.Integer">
+            <column name="areas_protegidas" />
+        </property>
+        <property name="ecosistemasFragiles" type="java.lang.Integer">
+            <column name="ecosistemas_fragiles" />
+        </property>
+    </class>
+</hibernate-mapping>

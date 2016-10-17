@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/10/2016 09:54:51 PM by Hibernate Tools 5.1.0.Beta1 -->
+<hibernate-mapping>
+    <class name="com.bcb.ambienta.ambientaapp.model.Aspectosocial" table="aspectosocial" catalog="ambienta" optimistic-lock="version">
+        <id name="idAspectoSocial" type="int">
+            <column name="idAspectoSocial" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="proyecto" class="com.bcb.ambienta.ambientaapp.model.Proyecto" fetch="select">
+            <column name="Proyecto_idProyecto" not-null="true" />
+        </many-to-one>
+        <property name="poblacionTotal" type="java.lang.Integer">
+            <column name="poblacionTotal" />
+        </property>
+        <property name="hogaresProm" type="java.lang.Float">
+            <column name="hogares_prom" precision="12" scale="0" />
+        </property>
+        <property name="nroViviendas" type="java.lang.Integer">
+            <column name="nro_viviendas" />
+        </property>
+        <property name="pblMasculina" type="java.lang.Integer">
+            <column name="pbl_masculina" />
+        </property>
+        <property name="pblFemenina" type="java.lang.Integer">
+            <column name="pbl_femenina" />
+        </property>
+        <property name="pblAreaurbanaM2" type="java.lang.Integer">
+            <column name="pbl_areaurbana_m2" />
+        </property>
+    </class>
+</hibernate-mapping>

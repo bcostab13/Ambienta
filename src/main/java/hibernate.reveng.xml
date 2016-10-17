@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<table-filter match-catalog="ambienta" match-name="aspectosocial" />
+	<table-filter match-catalog="ambienta" match-name="biologia" />
+	<table-filter match-catalog="ambienta"
+		match-name="calidadelementos" />
+	<table-filter match-catalog="ambienta" match-name="empresa" />
+	<table-filter match-catalog="ambienta" match-name="geomorfologia" />
+	<table-filter match-catalog="ambienta" match-name="hidrografia" />
+	<table-filter match-catalog="ambienta" match-name="impacto" />
+	<table-filter match-catalog="ambienta"
+		match-name="mecanismopartciudadana" />
+	<table-filter match-catalog="ambienta"
+		match-name="mecanismoproyecto" />
+	<table-filter match-catalog="ambienta" match-name="meteorologia" />
+	<table-filter match-catalog="ambienta" match-name="proyecto" />
+	<table-filter match-catalog="ambienta" match-name="proyectoimpacto" />
+	<table-filter match-catalog="ambienta" match-name="responsable" />
+	<table-filter match-catalog="ambienta"
+		match-name="ubicaciongeografica" />
+	<table catalog="ambienta" name="aspectosocial"></table>
+	<table catalog="ambienta" name="calidadelementos"></table>
+	<table catalog="ambienta" name="geomorfologia"></table>
+	<table catalog="ambienta" name="proyecto"></table>
+	<table catalog="ambienta" name="empresa"></table>
+	<table catalog="ambienta" name="proyectoimpacto"></table>
+	<table catalog="ambienta" name="mecanismopartciudadana"></table>
+	<table catalog="ambienta" name="biologia"></table>
+	<table catalog="ambienta" name="hidrografia"></table>
+	<table catalog="ambienta" name="meteorologia"></table>
+	<table catalog="ambienta" name="ubicaciongeografica"></table>
+	<table catalog="ambienta" name="responsable" schema="">
+		<primary-key></primary-key>
+	</table>
+	<table catalog="ambienta" name="impacto"></table>
+	<table catalog="ambienta" name="mecanismoproyecto"></table>
+</hibernate-reverse-engineering>
