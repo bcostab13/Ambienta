@@ -28,4 +28,11 @@ protected final Log logger = LogFactory.getLog(getClass());
 
         return new ModelAndView("explorador", "now", now);
 	}
+        
+        @RequestMapping(value="/inicio.htm")
+	public ModelAndView handleRequest2(HttpServletRequest request,HttpServletResponse response) throws ServletException,IOException{
+            logger.info("Returning inicio view " );
+
+        return new ModelAndView("inicio");
+	}
 }

@@ -1,5 +1,37 @@
-@CHARSET "ISO-8859-1";
-
-html{
-	background-image: url("ambiente.png");
+html,body{
+    background-image: url("ambiente.png");
 }
+
+#principal{
+    padding: 10px;
+    background: #555;
+    width: max-content;
+    position: absolute;
+    
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding:15px;
+}
+
+#poblador{    
+    float: left;
+    background: #31708f;
+    width: 300px;
+    height: 150px;
+    margin-right: 10px;
+}
+
+#poblador:hover{  
+    background: #2e6da4;
+    
+}
+
+#empresa{
+    
+    float: left;
+    background: #ac2925;
+    width: 300px;
+    height: 150px;
+}
+
