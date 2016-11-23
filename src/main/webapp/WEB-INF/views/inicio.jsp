@@ -29,7 +29,7 @@
             <label style="color: #c8e5bc">Seleccione la opción que le corresponde:</label>
             <br>
             <div id="poblador" style="color: #c8e5bc"><p><a href="<c:url value="explorador.htm"/>">Poblador</a></p></div>
-            <div id="empresa" style="color: #c8e5bc" onclick=""><p>Empresa Minera</p></div>
+            <div id="empresa" style="color: #c8e5bc" onclick=""><p><a href="<c:url value="empresa.htm"/>">Empresa Minera</a></p></div>
         </div>
     </body>
 </html>

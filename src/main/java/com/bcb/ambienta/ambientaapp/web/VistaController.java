@@ -35,4 +35,18 @@ protected final Log logger = LogFactory.getLog(getClass());
 
         return new ModelAndView("inicio");
 	}
+        
+        @RequestMapping(value="/empresa.htm")
+	public ModelAndView handleRequest3(HttpServletRequest request,HttpServletResponse response) throws ServletException,IOException{
+            logger.info("Returning empresa view " );
+
+        return new ModelAndView("empresa");
+	}
+        
+        @RequestMapping(value="/proyecto.htm")
+	public ModelAndView handleRequest4(HttpServletRequest request,HttpServletResponse response) throws ServletException,IOException{
+            logger.info("Returning proyecto view " );
+
+        return new ModelAndView("proyecto");
+	}
 }

@@ -13,6 +13,7 @@
   	<drools.version>5.0.1</drools.version>
   </properties>
   
+   
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -46,60 +47,65 @@
     	<artifactId>taglibs-standard-impl</artifactId>
     	<version>1.2.5</version>
     </dependency>  
-    <dependency>
-	    <groupId>org.kie</groupId>
-	    <artifactId>kie-api</artifactId>
-	    <version>6.4.0.Final</version>
-	</dependency>
+        <dependency>
+            <groupId>org.kie</groupId>
+            <artifactId>kie-api</artifactId>
+            <version>6.5.0.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.drools</groupId>
+            <artifactId>drools-core</artifactId>
+            <version>6.5.0.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.drools</groupId>
+            <artifactId>drools-compiler</artifactId>
+            <version>6.5.0.Final</version>
+        </dependency>
 
-    <dependency>
-	    <groupId>org.drools</groupId>
-	    <artifactId>drools-compiler</artifactId>
-	    <version>6.4.0.Final</version>
-	    <scope>runtime</scope>
-	</dependency>	
-	
+        <dependency>
+            <groupId>org.kie</groupId>
+            <artifactId>kie-ci</artifactId>
+            <version>6.5.0.Final</version>
+        </dependency>
+
 	<dependency>
-	    <groupId>org.drools</groupId>
-	    <artifactId>drools-clips</artifactId>
-	    <version>5.6.0.Final</version>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>1.1.0.Final</version>
 	</dependency>
 	<dependency>
-		<groupId>javax.validation</groupId>
-		<artifactId>validation-api</artifactId>
-		<version>1.1.0.Final</version>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>5.2.4.Final</version>
 	</dependency>
 	<dependency>
-		<groupId>org.hibernate</groupId>
-		<artifactId>hibernate-validator</artifactId>
-		<version>5.2.4.Final</version>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.21</version>
 	</dependency>
 	<dependency>
-		<groupId>org.slf4j</groupId>
-		<artifactId>slf4j-api</artifactId>
-		<version>1.7.21</version>
-	</dependency>
-	<dependency>
-		<groupId>org.slf4j</groupId>
-		<artifactId>slf4j-log4j12</artifactId>
-		<version>1.7.21</version>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.21</version>
 	</dependency>
 	
 	<dependency>
-        <groupId>org.apache.httpcomponents</groupId>
-        <artifactId>httpclient</artifactId>
-        <version>4.5.1</version>
-        <type>jar</type>
-    </dependency>
-    <dependency>
-        <groupId>org.apache.httpcomponents</groupId>
-        <artifactId>httpcore</artifactId>
-        <version>4.4.3</version>
-        <type>jar</type>
-    </dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.1</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpcore</artifactId>
+            <version>4.4.3</version>
+            <type>jar</type>
+        </dependency>
   </dependencies>
   <build>
     <finalName>ambientaapp</finalName>
+     
   </build>
   
 </project>

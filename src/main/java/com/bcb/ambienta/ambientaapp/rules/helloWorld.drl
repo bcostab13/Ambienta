@@ -1,0 +1,8 @@
+import com.drools.todo.se.puede.Message
+
+rule "Hello World"
+when
+  message:Message (type == 'Hello')
+then
+  message.printMessage();
+end

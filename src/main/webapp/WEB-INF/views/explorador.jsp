@@ -86,7 +86,7 @@
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
-            	<h1>Proyecto Minero</h1>                
+            	<h1 id="pruebaSE">Proyecto Minero</h1>                
                 <div id="rateYo"></div>               
                       
                 <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
@@ -101,7 +101,14 @@
 
     <!-- jQuery -->    
     <script src='<c:url value="/resources/js/jquery-3.1.0.min.js"/>' >
-    	
+    	$("pruebaSE").click(function(){
+            $.ajax({
+            url: "web/explo",
+            context: document.body
+          }).done(function() {
+            $( this ).addClass( "done" );
+          });
+        });
     </script>
     
     <!-- Star Rating Java Script -->
