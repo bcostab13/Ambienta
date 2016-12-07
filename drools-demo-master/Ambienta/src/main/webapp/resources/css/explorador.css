@@ -1,0 +1,56 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05/12/2016, 11:36:45 PM
+    Author     : BRENDA
+*/
+
+#flDatos{
+    padding: 5px;
+    display: block;
+    position: absolute;
+    left: 350px;
+    width: 280px;
+    height: 150px;
+    background: #269abc;
+    z-index: 2;
+}
+
+#flBiologico{
+    padding: 5px;
+    display: block;
+    position: absolute;
+    left: 650px;
+    width: 280px;
+    height: 150px;
+    background: #269abc;
+    z-index: 2;
+}
+
+#flFisico{
+    padding: 5px;
+    display: block;
+    position: absolute;
+    left: 350px;
+    width: 280px;
+    height: 150px;
+    top: 362px;
+    background: #269abc;
+    z-index: 2;
+}
+
+
+#flSocial{
+    padding: 5px;
+    display: block;
+    position: absolute;
+    left: 650px;
+    width: 280px;
+    height: 150px;
+    top: 362px;
+    background: #269abc;
+    z-index: 2;
+}
